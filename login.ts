@@ -1,13 +1,5 @@
 import request from '@/utils/request'
 
-// 获取公钥
-export const getPublicKey = (): Promise<any> => {
-  return request({
-    url: `/connection/v1/public`,
-    method: 'get'
-  })
-}
-
 // 图形验证码id hash ipfs
 export const get_captcha_id = (): Promise<any> => {
   return request({
